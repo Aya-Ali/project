@@ -1,0 +1,320 @@
+*{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+.w-35{
+    width:35%;
+}
+.video{
+    width:100%;
+    height:69.5%;
+    position: relative;
+    overflow: hidden;
+}
+.video h2{
+    font-size:50;
+    color:white;
+}
+.video p{
+    font-size:24;
+    color:white;
+}
+.video .btn {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    margin: 10px;
+    padding: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+   }
+.btn-3 {
+    background-image: -webkit-gradient(linear, right top, left top, from(rgb(44, 62, 80)), to(rgb(253, 116, 108)));
+    background-image: linear-gradient(to left, rgb(44, 62, 80), rgb(253, 116, 108));}
+.btn:hover {
+    background-position: right center; /* change the direction of the change here */
+}  
+.video span{
+    color:rgb(253, 116, 108);
+    font-size:24;
+    font-weight:700;
+}
+.video video{
+    height:100%;
+    width:101%;
+    position: relative;
+    bottom: 25px;
+}
+.layer{
+    position: absolute;
+    width:100%;
+    height: 94.5%;
+    top:0;
+    left:0;
+    bottom: 0;
+    right:0;
+    background-color: rgba(0,0,0,.4);
+    z-index:10000;
+}
+.info .image{
+    height:500px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+.info h3{
+    color:#555;
+    font-weight: bold;
+}
+.image img{
+    border-radius: 10px;
+    opacity: .9;
+}
+.member{
+    background-color: #f1f1f1;
+    height:35%;
+}
+.blog .member{
+    background-color: #f1f1f1;
+    height:25%;
+}
+.member:hover{
+    -webkit-box-shadow: 0 0 20px gray;
+    box-shadow: 0 0 20px gray;
+}
+/*footer*/
+.nb-footer{
+    background: #272727;
+    margin-top: 60px;
+    padding-bottom: 30px;
+  }
+  .nb-footer .footer-single{
+    margin-top: 30px;
+  }
+  .nb-footer .footer-title{
+      display: block;
+    margin: 10px 0 25px 0;
+    border-bottom: 1px dotted #e4e9f0;
+  }
+  .nb-footer .footer-single a{
+      text-decoration: none;
+  }
+  .list-unstyled a:hover{
+      color:rgb(160, 92, 95)!important;
+  }
+  .list-unstyled a:hover i{
+      text-decoration: none;
+    color:rgb(160, 92, 95)!important;
+  }
+  .nb-footer .footer-single h2{
+      color: #eee;
+    font-size: 18px;
+    font-weight: 200;
+    display: inline-block;
+    border-bottom: 2px solid rgb(160, 92, 95);
+    padding-bottom: 5px;
+    margin-bottom: -2px;
+  }
+  .nb-footer .footer-single li{
+    border-top: solid 1px #353535;
+  }
+  .nb-footer .footer-single li:first-child{
+    border-top: none;
+  }
+  .nb-footer .footer-single li a{
+    color: #979797;
+    font-size: 12px;
+    padding: 6px 0px;
+    display: block;
+    -webkit-transition:all 0.4s ease-in-out;
+    transition:all 0.4s ease-in-out;
+  }
+  .nb-footer .footer-single li a:hover{
+    color: #17a2b8;
+  }
+  .nb-footer .footer-single li a:hover i{
+    color: #17a2b8;
+  }
+  .nb-footer .dummy-logo {
+      margin-top: 11px;
+      padding-bottom: 9px;
+  }
+  .nb-footer .dummy-logo .icon {
+      margin-right: 10px;
+      border-radius: 20px;
+      margin-top: 24px;
+  }
+  .nb-footer .brand {
+      background: rgb(160, 92, 95);
+  }
+  .nb-footer .dummy-logo i {
+      font-size: 50px;
+      color: #fff;
+      padding: 5px;
+  }
+  .nb-footer .dummy-logo p {
+      color: #999;
+      font-size: 12px;
+  }
+  .nb-footer .dummy-logo h2 {
+      font-size: 24px !important;
+      border-bottom: none;
+      color: #696969;
+      padding: 5px 0;
+  }
+  .nb-footer .btn-footer{
+    border: 1px solid rgb(160, 92, 95);
+    margin-top: 10px;
+    color: #999;
+  }
+  .nb-footer .btn-footer:hover{
+    background: rgb(160, 92, 95);
+    color: #fff;
+    -webkit-transition:all 0.4s ease-in-out;
+    transition:all 0.4s ease-in-out;
+  
+  }
+  .nb-footer .useful-links li a{
+    text-transform: uppercase;
+  }
+  .nb-footer .footer-project a{
+    font-size: 13px;
+  }
+  .nb-footer .footer-project img{
+    margin-bottom: 20px;
+    border: 1px solid #666;
+    border-radius: 6px;
+    padding: 1px;
+    opacity: 0.7;
+    -webkit-transition:all 0.4s ease-in-out;
+    transition:all 0.4s ease-in-out;
+  }
+  .nb-footer .footer-project img:hover{
+    opacity: 1.0;
+    cursor: pointer;
+  }
+  .nb-footer .footer-project .footer-title{
+    margin-top: 0;
+  }
+  .nb-footer .footer-single p, .footer-single address{
+      color: #979797;
+    font-size: 14px;
+    margin-top: 5px;
+    line-height: 22px;
+  }
+  .nb-copyright{
+    background: #171717;
+    padding-bottom: 10px;
+  }
+   .nb-copyright .copyrt{
+    margin-top: 22px;
+    font-size: 14px;
+  color: #999999;
+  }
+  .nb-copyright .copyrt a{
+    color: rgb(160, 92, 95);
+  }
+  .nb-copyright .footer-social{
+      margin-top: 10px;
+  }
+  .nb-copyright .footer-social i{
+    padding: 5px 10px;
+    color: #999;
+    border: 1px solid #333;
+    margin-top: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    -webkit-transition:all 0.4s ease-in-out;
+    transition:all 0.4s ease-in-out;
+  }
+  .nb-copyright .footer-social i:hover{
+    background: rgb(160, 92, 95);
+    color: #fff;
+  }
+  .nb-copyright .footer-social .fa-facebook{
+    padding: 5px 14px;
+  }
+  /*nav*/
+  .overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */    
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 55555; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.7); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    -webkit-transition: 0.5s;
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+  .open{
+      font-size: 30px;
+      color:black;
+      cursor: pointer;
+  }
+  /* Position the content inside the overlay */
+  .overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  }
+  
+  .overlay-content a:hover
+  {
+      outline: 1px solid white;
+  }
+  
+  /* The navigation links inside the overlay */
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    -webkit-transition: 0.3s;
+    transition: 0.3s; /* Transition effects on hover (color) */
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  /* Position the close button (top right corner) */
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  } 
+  
+.nb-footer .btn-outline-danger{
+    color: rgb(160, 92, 95);
+    border-color: rgb(160, 92, 95);
+}
+.nb-footer .btn-outline-danger:hover{
+    color: #fff;
+    border-color: rgb(160, 92, 95);
+    background-color: rgb(160, 92, 95);
+}
