@@ -1,4 +1,4 @@
-.btn
+.btn1
 {    
     background-image: linear-gradient(to left, rgb(44, 62, 80), rgb(253, 116, 108));
     flex: 1 1 auto;
@@ -12,7 +12,7 @@
     border: none;
    }
 
-.btn:hover 
+.btn1:hover 
 {
     background-position: right center; /* change the direction of the change here */
 }
@@ -53,10 +53,10 @@ background:rgba(160, 92, 95, 0.8);
    
   
   display: block;
+    border: none;
      
     
 }
-
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
 
 
@@ -782,8 +782,4 @@ width:15px;
   transform: translateX(0);
   height: 100%;
   border-color: rgb(80, 28, 30);
-}
-
-
-=======
 }
