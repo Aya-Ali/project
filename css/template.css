@@ -1,79 +1,12 @@
 *
 {
-
+    
 }
 body
 {
     font-family: 'Noto Serif', serif;
     
 }
-.overlay {
-    /* Height & width depends on how you want to reveal the overlay (see JS below) */    
-    height: 100%;
-    width: 0;
-    position: fixed; /* Stay in place */
-    z-index: 55555; /* Sit on top */
-    left: 0;
-    top: 0;
-    background-color: rgb(0,0,0); /* Black fallback color */
-    background-color: rgba(0,0,0, 0.7); /* Black w/opacity */
-    overflow-x: hidden; /* Disable horizontal scroll */
-    -webkit-transition: 0.5s;
-    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
-  }
-  .open{
-      font-size: 30px;
-      color:black;
-      cursor: pointer;
-  }
-  /* Position the content inside the overlay */
-  .overlay-content {
-    position: relative;
-    top: 25%; /* 25% from the top */
-    width: 100%; /* 100% width */
-    text-align: center; /* Centered text/links */
-    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
-  }
-  
-  .overlay-content a:hover
-  {
-      outline: 1px solid white;
-  }
-  
-  /* The navigation links inside the overlay */
-  .overlay a {
-     padding: 8px;
-  text-decoration: none;
-  font-size: 36px;
-  color: #818181;
-  display: block; 
-  transition: 0.3s;
-    font-size: 20px; /* Transition effects on hover (color) */
-  }
-  
-  /* When you mouse over the navigation links, change their color */
-  .overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
-  }
-  
-  /* Position the close button (top right corner) */
-  .overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-  }
-  
-  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-  @media screen and (max-height: 450px) {
-    .overlay a {font-size: 20px}
-    .overlay .closebtn {
-      font-size: 40px;
-      top: 15px;
-      right: 35px;
-    }
-  } 
-  
 
 .header
 {    
@@ -96,7 +29,7 @@ body
 }
 .template
 {
-    padding: 20px 0;
+   /* padding: 20px 0;*/
    
 }
 .navleft
@@ -107,7 +40,7 @@ body
 
 .template a
 {
-    color: #fff;
+color: #fff;
     text-decoration: none;
     padding: 10px;
     font-size: 15px;
@@ -119,6 +52,13 @@ body
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     margin: 8px 10px 12px;
      background-position: right center;
+}
+.template p
+{
+    font-weight: 800;
+    color: #5e3f3f;
+    font-size: 20px;
+    padding: 5px;
 }
 .img1
 {
@@ -163,6 +103,7 @@ body
     top: 25%;
     margin-top: 20px;
     text-align: center;
+    color: #fff;
 }
 .layer2 h2
 {
@@ -183,7 +124,7 @@ body
 .gradient-button
 {
     margin: 10px;
-    font-family: "Arial Black", Gadget, sans-serif;
+    font-family: "Arial black", Gadget, sans-serif;
     font-size: 20px;
     padding: 15px;
     text-align: center;
@@ -191,7 +132,7 @@ body
     -webkit-transition: 0.5s;
     transition: 0.5s;
     background-size: 200% auto;
-    color: #FFF;
+    color: #fff;
     width: 75%;
     -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
@@ -326,7 +267,7 @@ body
       color:rgb(160, 92, 95)!important;
   }
   .list-unstyled a:hover i{
-      text-decoration: none;
+  text-decoration: none;
     color:rgb(160, 92, 95)!important;
   }
   .nb-footer .footer-single h2{
@@ -478,3 +419,113 @@ body
 	padding-right: 0;
 }
 }
+
+
+
+
+.navbar-vertical {
+  width: 320px;
+  height: 100vh;
+  padding: 0.5rem 1rem;
+  background-color: rgba(60, 30, 32, 0.63) !important;
+  -webkit-transition: left 1s;
+  transition: left 1s;
+  left: 0;
+  top: 0;
+    z-index: 555555555555555555;
+}
+.navbar-nav .nav-link
+{
+    color: #fff !important;
+}
+.navbar-vertical .navbar-brand {
+  margin-right: 0;
+  padding-right: 1.5rem;
+  display: block;
+}
+.navbar-vertical .navbar-toggler {
+  border: none;
+  padding: 0;
+  display: inline-block;
+  position: absolute;
+  right: 0.5rem;
+  top: 0.75rem;
+  cursor: pointer;
+}
+.navbar-vertical.show {
+  left: 0;
+}
+.navbar-vertical.hidden {
+  left: -276px;
+}
+.navbar-vertical ul {
+  text-align: center;
+    width: 70%;
+    margin: auto;
+}
+.navbar-vertical li {
+    width: 38%;
+    border-bottom: 1px solid rgba(255,255,255,0.4);
+    margin: auto;
+    padding-top: 20px;
+    font-size: 1em;
+    overflow: hidden;
+}
+.navbar-vertical li a {
+    width: 100%;
+  position: relative;
+  text-transform: uppercase;
+}
+.navbar-vertical li a:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 99.5%;
+  height: 2px;
+  border-bottom: 3px solid transparent;
+  border-left: 3px solid transparent;
+}
+.navbar-vertical li a:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 99.5%;
+  height: 2px;
+  border-top: 3px solid transparent;
+  border-right: 3px solid transparent;
+}
+.navbar-vertical li a:hover {
+  color: inherit;
+}
+.navbar-vertical li a:hover:before {
+  -webkit-transition: 0.1s height linear 0.1s, 0.1s -webkit-transform linear;
+  transition: 0.1s height linear 0.1s, 0.1s -webkit-transform linear;
+  transition: 0.1s transform linear, 0.1s height linear 0.1s;
+  transition: 0.1s transform linear, 0.1s height linear 0.1s, 0.1s -webkit-transform linear;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  height: 100%;
+  border-color:rgb(80, 28, 30);
+}
+.navbar-vertical li a:hover:after {
+  -webkit-transition: 0.1s height linear 0.3s, 0.1s -webkit-transform linear 0.2s;
+  transition: 0.1s height linear 0.3s, 0.1s -webkit-transform linear 0.2s;
+  transition: 0.1s transform linear 0.2s, 0.1s height linear 0.3s;
+  transition: 0.1s transform linear 0.2s, 0.1s height linear 0.3s, 0.1s -webkit-transform linear 0.2s;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  height: 100%;
+  border-color: rgb(80, 28, 30);
+}
+
+

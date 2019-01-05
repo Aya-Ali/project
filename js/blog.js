@@ -1,33 +1,41 @@
-var typed2 = new Typed('.chang', {
-    strings: ['To sell my potter','To promote my restaurant', 'A blog about my travels', 'A photography portfolio'],
-    typeSpeed: 100,
-    backSpeed: 100,
-    fadeOut: false,
-    loop: true,
-    cursorChar: '',
-  });
 $(document).ready(function(){
-    var $grid =$('.grid').isotope({
-  itemSelector: '.grid-item',
-  percentPosition: true,
-  masonry: {
-    columnWidth: '.grid-item'
-  },
-});
-    $('.show2').on( 'click', 'a', function() {
-  var filterValue = $(this).attr('data-filter');
-  $grid.isotope({ filter: filterValue });
-        $(".show2 a").removeClass("active");
-        $(this).addClass("active");
-});
-});
+  
+    $("#features").animate({transform: "scale(1.2)"},500)
+
+})
+
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+
+
+
+
+
+
 $('.navbar-vertical .navbar-toggler').on('click', function(){
   var $this = $(this)
   var $isShow = $this.parent('.navbar-vertical').hasClass('show')
   var $isHide = $this.parent('.navbar-vertical').hasClass('hidden')
   if($isShow){
      
-$(".navbar-vertical").css("width","320px");
+    $(".navbar-vertical").css("width","320px");
     $('.navbar-vertical.show').removeClass('show');
     $this.parent('.navbar-vertical').addClass('hidden');
     $(".navbar-toggler").html("<span class=\"navbar-toggler-icon\"></span>");
@@ -45,3 +53,7 @@ $(".navbar-vertical").css("width","320px");
 })
 
 
+
+
+
+new WOW().init();
