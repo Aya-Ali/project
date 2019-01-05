@@ -42,13 +42,13 @@ body
   
   /* The navigation links inside the overlay */
   .overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #818181;
-    display: block; /* Display block instead of inline */
-    -webkit-transition: 0.3s;
-    transition: 0.3s; /* Transition effects on hover (color) */
+     padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block; 
+  transition: 0.3s;
+    font-size: 20px; /* Transition effects on hover (color) */
   }
   
   /* When you mouse over the navigation links, change their color */
