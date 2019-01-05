@@ -246,7 +246,11 @@
   .nb-copyright .footer-social .fa-facebook{
     padding: 5px 14px;
   }
+.nb-footer .btn-outline-danger{
+    color: rgb(160, 92, 95);
+    border-color: rgb(160, 92, 95);
 
+}
 .navbar-vertical {
   width: 320px;
   height: 100vh;
@@ -257,7 +261,8 @@
   left: 0;
   top: 0;
     z-index: 555555555555555555;
-}
+
+  
 .navbar-nav .nav-link
 {
     color: #fff !important;
