@@ -365,6 +365,35 @@ width:15px;
     z-index: 15;
 }
 
+@media screen and (max-width: 880px) {
+  .oversecond {
+   width: 20%;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .myoverlay {
+   width: 20%;
+  }
+}
+@media screen and (max-width: 657px) {
+  .myoverlay {
+   width: 0%;
+  }
+}
+@media screen and (max-width: 657px) {
+  .oversecond {
+   width: 0%;
+  }
+}
+
+
+
+
+.name
+{
+     z-index: 100;
+}
 .name h1
 {
     padding-top: 70px;
@@ -374,6 +403,7 @@ width:15px;
     font-weight: bold;
    
     border-bottom: 1px solid rgba(255,255,255,0.4);
+   
     
 }
  
