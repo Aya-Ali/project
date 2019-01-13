@@ -19,5 +19,5 @@ $('.navbar-vertical .navbar-toggler').on('click', function(){
           $(".navbar-vertical .navbar-toggler").css("right","50%").css("top","2.75rem");
       }
     }
-  })
+  });
   
