@@ -1,5 +1,6 @@
 
 $(document).ready(function(){
+ 
   $("#features").animate({transform: "scale(1.2)"},500);
 //var modal = document.getElementById('myModal');
 // Get the image and insert it inside the modal - use its "alt" text as a caption
@@ -34,5 +35,6 @@ $(".close").click(function(){
 })
 }
 })
-new WOW().init();
+
+
 import css from '../css/blog.css';
