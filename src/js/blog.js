@@ -34,5 +34,4 @@ $(".close").click(function(){
 })
 }
 })
-new WOW().init();
 import css from '../css/blog.css';

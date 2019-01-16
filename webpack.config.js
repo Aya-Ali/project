@@ -1,11 +1,24 @@
+const webpack = require('webpack');
+
 module.exports=
 {
     entry:'./src/js/index1.js',
+    optimization: {
+        minimize: false
+      },
     output:{
         filename:'bundle.js',
         path:__dirname+'/dist',
     },
+    plugins: [
+        new webpack.ProvidePlugin({
+            $: "jquery",
+            jQuery: "jquery",
+            "window.jQuery": "jquery"
+        })
+    ],
     module: {
+        
         rules: [
           {
             
