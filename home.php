@@ -1,34 +1,6 @@
-<html>
-    <head> 
-<link rel="stylesheet" href="css/all.css"/>  
-        <link rel="stylesheet" href="css/animate.css">
-    </head>
-    <body>
-     <header>
-          <nav class="navbar-dark bg-dark fixed-top navbar-vertical hidden">
-  <a class="navbar-brand ml-2 mr-2" href="#">U-code</a>
-  <button class="navbar-toggler ml-auto" type="button">
-    <span class="navbar-toggler-icon"></span>
-      
-  </button>
-  
-  <ul class="navbar-nav justify-content-center flex-wrap flex-row mt-5">
-      <li class="nav-item active">
-        <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="features.html">Features</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="template.html">Template</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="blog.html">Blog</a>
-      </li>
-    </ul>
-</nav>
-
-            </header>
+<?php include 'header.php' ?>;
+    
+     <?php include 'nav.php'?>;
 
     
 <section id="home">
@@ -40,7 +12,7 @@
    <div class="row d-flex justify-content-center"> <div class="name text-center pt-5 col-md-6 col-sm-9"><h1>U-Code</h1></div></div>
    
 <div class="text-center py-5">
-                <a href="templates.html"><button class="btn btn1 btn-primary p-3">Start today</button></a>
+                <a href="templates.php"><button class="btn btn1 btn-primary p-3">Start today</button></a>
             </div>    
     </div>
     
@@ -67,11 +39,12 @@
 	<div class="login-html">
 		<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
 		<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
-		<div class="login-form">
+       
+        <div class="login-form">
 			<div class="sign-in-htm">
-				<div class="group">
-					<label for="user" class="label">Username</label>
-					<input id="user" type="text" class="input">
+            <div class="group">
+					<label for="pass" class="label">Email Address</label>
+					<input name id="pass" type="text" class="input">
 				</div>
 				<div class="group">
 					<label for="pass" class="label">Password</label>
@@ -88,11 +61,16 @@
 				<div class="foot-lnk">
 					<a href="#forgot">Forgot Password?</a>
 				</div>
-			</div>
+            </div>
+            
 			<div class="sign-up-htm">
 				<div class="group">
 					<label for="user" class="label">Username</label>
 					<input id="user" type="text" class="input">
+                </div>
+                <div class="group">
+					<label for="pass" class="label">Email Address</label>
+					<input id="pass" type="text" class="input">
 				</div>
 				<div class="group">
 					<label for="pass" class="label">Password</label>
@@ -102,10 +80,7 @@
 					<label for="pass" class="label">Repeat Password</label>
 					<input id="pass" type="password" class="input" data-type="password">
 				</div>
-				<div class="group">
-					<label for="pass" class="label">Email Address</label>
-					<input id="pass" type="text" class="input">
-				</div>
+				
 				<div class="group">
 					<input type="submit" class="button" value="Sign Up">
 				</div>
@@ -179,7 +154,7 @@ Not only does Joe's illustrative self-portrait give him a personal brand that cu
 </div></div>  
         <div class="container">
                  <div class=" d-flex justify-content-center py-3">
-                    <a href="features.html"><button class="btn btn1 btn-primary p-3 float-right">See more features!</button></a>
+                    <a href="features.php"><button class="btn btn1 btn-primary p-3 float-right">See more features!</button></a>
                 </div>                 
             </div>
         </section>        
@@ -267,7 +242,7 @@ Not only does Joe's illustrative self-portrait give him a personal brand that cu
 
                  <div class="container">
                  <div class=" d-flex justify-content-center py-3">
-                    <a href="templates.html"><button class="btn btn1 btn-primary p-3 float-right">See more templates!</button></a>
+                    <a href="templates.php"><button class="btn btn1 btn-primary p-3 float-right">See more templates!</button></a>
                 </div>                 
             </div>
             
@@ -391,10 +366,10 @@ Not only does Joe's illustrative self-portrait give him a personal brand that cu
 	<div class="footer-single useful-links">
 	 <div class="footer-title"><h2>Navigation</h2></div>
 	 <ul class="list-unstyled">
-            <li><a href="home.html">Home <i class="fa fa-angle-right pull-right"></i></a></li>
-            <li><a href="features.html">Features <i class="fa fa-angle-right pull-right"></i></a></li>
-            <li><a href="template.html">template <i class="fa fa-angle-right pull-right"></i></a></li>
-            <li><a href="blog.html">blog <i class="fa fa-angle-right pull-right"></i></a></li>
+            <li><a href="home.php">Home <i class="fa fa-angle-right pull-right"></i></a></li>
+            <li><a href="features.php">Features <i class="fa fa-angle-right pull-right"></i></a></li>
+            <li><a href="template.php">template <i class="fa fa-angle-right pull-right"></i></a></li>
+            <li><a href="blog.php">blog <i class="fa fa-angle-right pull-right"></i></a></li>
         </ul>
          </div>
 </div>
@@ -467,6 +442,4 @@ Not only does Joe's illustrative self-portrait give him a personal brand that cu
         
         
  
-   <script src="dist/bundle.js"></script>      
-    </body>
-</html>
+   <?php include 'footer.php'?>;

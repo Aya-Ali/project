@@ -1,14 +1,6 @@
-<html>
-    <head>
-        
-      
-        <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
-        <link href="css/all.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/animate.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-     
-    </head>
-    <body>
+<?php include 'header.php' ?>;
+    
+     <?php include 'nav.php'?>;
         <header>
             <nav class="navbar-dark bg-dark fixed-top navbar-vertical hidden">
     <a class="navbar-brand ml-2 mr-2" href="#">U-code</a>
@@ -19,16 +11,16 @@
     
     <ul class="navbar-nav justify-content-center flex-wrap flex-row mt-5">
         <li class="nav-item active">
-          <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="home.php">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="features.html">Features</a>
+          <a class="nav-link" href="features.php">Features</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="template.html">Template</a>
+          <a class="nav-link" href="template.php">Template</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="blog.html">Blog</a>
+          <a class="nav-link" href="blog.php">Blog</a>
         </li>
       </ul>
   </nav>
@@ -313,10 +305,10 @@
 	<div class="footer-single useful-links">
 	 <div class="footer-title"><h2>Navigation</h2></div>
 	 <ul class="list-unstyled">
-            <li><a href="home.html">Home <i class="fa fa-angle-right pull-right"></i></a></li>
-            <li><a href="features.html">Features <i class="fa fa-angle-right pull-right"></i></a></li>
-            <li><a href="template.html">template <i class="fa fa-angle-right pull-right"></i></a></li>
-            <li><a href="blog.html">blog <i class="fa fa-angle-right pull-right"></i></a></li>
+            <li><a href="home.php">Home <i class="fa fa-angle-right pull-right"></i></a></li>
+            <li><a href="features.php">Features <i class="fa fa-angle-right pull-right"></i></a></li>
+            <li><a href="template.php">template <i class="fa fa-angle-right pull-right"></i></a></li>
+            <li><a href="blog.php">blog <i class="fa fa-angle-right pull-right"></i></a></li>
         </ul>
          </div>
 </div>
@@ -387,7 +379,4 @@
         </footer>
 
    
-    
-    <script src="dist/bundle.js"></script>  
-    </body>
-</html>
+   <?php include 'footer.php'?>;
